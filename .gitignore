@@ -1,0 +1,237 @@
+# ===================================
+# CORE YIELD PROJECT .gitignore
+# ===================================
+
+# ===================================
+# ENVIRONMENT & SECRETS
+# ===================================
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+.env.test
+*.pem
+*.p12
+*.key
+*.crt
+id_rsa
+id_rsa.pub
+
+# ===================================
+# NODE.JS & NPM
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+package-lock.json.bak
+yarn.lock.bak
+
+# ===================================
+# FRONTEND (React/Vite/Next.js)
+# ===================================
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/.vite/
+frontend/.turbo/
+frontend/.vercel/
+frontend/.netlify/
+
+# ===================================
+# BACKEND (Node.js/Express)
+# ===================================
+backend/logs/
+backend/uploads/
+backend/temp/
+backend/coverage/
+backend/.nyc_output/
+
+# ===================================
+# SMART CONTRACTS (Hardhat)
+# ===================================
+contracts/artifacts/
+contracts/cache/
+contracts/coverage/
+contracts/typechain/
+contracts/typechain-types/
+contracts/deployments/localhost/
+contracts/deployments/hardhat/
+contracts/.openzeppelin/
+contracts/deployed-contracts.json
+
+# ===================================
+# DATABASE
+# ===================================
+*.db
+*.sqlite
+*.sqlite3
+data/
+dumps/
+mongodb-data/
+postgres-data/
+
+# ===================================
+# LOGS
+# ===================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+combined.log
+error.log
+access.log
+
+# ===================================
+# RUNTIME & TEMP FILES
+# ===================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ===================================
+# IDE & EDITORS
+# ===================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vim/
+.emacs.d/
+.atom/
+
+# ===================================
+# OS SPECIFIC
+# ===================================
+# Windows
+*.exe
+*.msi
+*.msm
+*.msp
+desktop.ini
+
+# macOS
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.nfs*
+
+# ===================================
+# TESTING & COVERAGE
+# ===================================
+coverage/
+*.lcov
+.nyc_output/
+.coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+.cache/
+test-results/
+
+# ===================================
+# BUILD ARTIFACTS
+# ===================================
+build/
+dist/
+out/
+target/
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# ===================================
+# BLOCKCHAIN SPECIFIC
+# ===================================
+# Hardhat
+.encryptedKey.json
+mnemonic.txt
+*secret*
+*private*
+
+# Truffle
+truffle-config.js.backup
+migrations/deployed_addresses.json
+
+# Web3 & Metamask
+.secret
+.mnemonic
+
+# ===================================
+# DOCUMENTATION
+# ===================================
+docs/build/
+.docusaurus/
+.vuepress/dist/
+
+# ===================================
+# MISC
+# ===================================
+*.pid
+*.seed
+*.pid.lock
+.grunt
+lib-cov
+.lock-wscript
+.wafpickle-*
+.node_repl_history
+.npm
+.eslintcache
+.stylelintcache
+.microbundle-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+.yarn-integrity
+.env.production.local
+*.tsbuildinfo
+.nuxt
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# PRODUCTION DEPLOYMENT
+# ===================================
+.vercel
+.netlify
+.firebase/
+.aws/
+.gcp/
+heroku.yml
+docker-compose.override.yml
+kubernetes/secrets/

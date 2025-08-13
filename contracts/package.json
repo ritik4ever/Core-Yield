@@ -1,0 +1,38 @@
+{
+    "name": "bitcoin-yield-optimizer-contracts",
+    "version": "1.0.0",
+    "description": "Smart contracts for Bitcoin Yield Optimizer",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test",
+        "deploy": "hardhat run scripts/deploy.js",
+        "deploy:testnet": "hardhat run scripts/deploy.js --network core_testnet",
+        "deploy:mainnet": "hardhat run scripts/deploy.js --network core_mainnet",
+        "clean": "hardhat clean",
+        "node": "hardhat node"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.9.3",
+        "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.2.3",
+        "@nomiclabs/hardhat-waffle": "^2.0.6",
+        "chai": "^4.3.7",
+        "ethereum-waffle": "^4.0.10",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.17.1"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "keywords": [
+        "solidity",
+        "ethereum",
+        "smart-contracts",
+        "bitcoin",
+        "defi"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+}

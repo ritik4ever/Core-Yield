@@ -1,0 +1,11 @@
+{
+    "name": "bitcoin-yield-optimizer",
+    "version": "1.0.0",
+    "scripts": {
+        "install-all": "npm install && npm install --prefix backend && npm install --prefix contracts",
+        "dev": "npm run dev --prefix backend",
+        "test": "npm test --prefix backend && npm test --prefix contracts",
+        "deploy": "npm run deploy --prefix contracts",
+        "seed": "node backend/scripts/seed-data.js"
+    }
+}
