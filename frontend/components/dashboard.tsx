@@ -112,7 +112,7 @@ export function Dashboard() {
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-green-400">Core Network Active</span>
+              <span className="text-green-400">Core Network</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4 text-blue-400" />
